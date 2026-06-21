@@ -14,7 +14,7 @@ export default function Footer() {
     });
 
     setLastModified(
-      new Date(document.lastModified).toISOString().split("T")[0]
+      new Date(document.lastModified).toISOString().split("T")[0],
     );
   }, []);
 
@@ -22,7 +22,7 @@ export default function Footer() {
     <footer>
       <div className="container obj-width">
         <div>
-          © 2026 Prof. {firstName} {lastName}. All rights reserved.
+          © 2026 {firstName} {lastName}. All rights reserved.
           <br />
           Last modified: {lastModified}
         </div>
