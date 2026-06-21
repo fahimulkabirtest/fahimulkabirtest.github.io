@@ -6,4 +6,9 @@ yourLastName: Doe
 navbarTitle: John Doe
 allowIndexing: true
 disallowAdmin: true
+showHome: true
+showPublications: true
+showResearch: true
+showMembers: false
+showJoinUs: false
 ---
