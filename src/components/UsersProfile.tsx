@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import type { Professor } from "../types/professor";
-import { loadProfessor } from "../utils/loadProfessor";
+import type { User } from "../types/user";
+import { loadUser } from "../utils/loadUser";
 
 import {
   FaGoogleScholar,
@@ -12,11 +12,11 @@ import {
 import { SiOrcid } from "react-icons/si";
 import { getAssetUrl } from "../utils/getAssetUrl";
 
-export default function ProfessorProfile() {
-  const [prof, setProf] = useState<Professor | null>(null);
+export default function UsersProfile() {
+  const [prof, setProf] = useState<User | null>(null);
 
   useEffect(() => {
-    loadProfessor().then(setProf);
+    loadUser().then(setProf);
   }, []);
 
   if (!prof) return null;
@@ -24,14 +24,14 @@ export default function ProfessorProfile() {
   const { links } = prof;
 
   return (
-    <section className="professor-profile">
+    <section className="user-profile">
       {/* Left */}
-      <div className="professor-image">
+      <div className="user-image">
         {prof.image && <img src={getAssetUrl(prof.image)} alt={prof.name} />}
       </div>
 
       {/* Right */}
-      <div className="professor-info">
+      <div className="user-info">
         <h2>{prof.name}</h2>
         <ReactMarkdown>{prof.body}</ReactMarkdown>
 

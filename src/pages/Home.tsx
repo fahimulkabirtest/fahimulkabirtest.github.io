@@ -1,14 +1,8 @@
 import NewsPreview from "../components/NewsPreview";
 import PublicationsList from "../components/PublicationsPreview";
-import ProfessorProfile from "../components/ProfessorProfile";
+import ProfessorProfile from "../components/UsersProfile";
 
 export default function Home() {
-  // const [overview, setOverview] = useState<ResearchOverview | null>(null);
-
-  // useEffect(() => {
-  //   loadResearchOverview().then(setOverview);
-  // }, []);
-
   return (
     <main>
       <section>

@@ -1,4 +1,4 @@
-export type Professor = {
+export type User = {
   name: string;
   image?: string;
   body: string;

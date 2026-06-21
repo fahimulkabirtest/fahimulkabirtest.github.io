@@ -1,12 +1,12 @@
-import type { Professor } from "../types/professor";
+import type { User } from "../types/user";
 import { parseFrontmatter } from "./parseFrontmatter";
 
-export async function loadProfessor(): Promise<Professor> {
-  const files = import.meta.glob("/src/content/professor/profile.md", {
+export async function loadUser(): Promise<User> {
+  const files = import.meta.glob("/src/content/user/profile.md", {
     as: "raw",
   });
 
-  const raw = await files["/src/content/professor/profile.md"]();
+  const raw = await files["/src/content/user/profile.md"]();
   const { data, body } = parseFrontmatter(raw);
 
   return {

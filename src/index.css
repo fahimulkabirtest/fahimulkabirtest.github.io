@@ -110,22 +110,22 @@ hr {
   cursor: pointer;
 }
 
-/* Professor's Profile  */
+/* User's Profile  */
 
-.professor-profile {
+.user-profile {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
-.professor-profile .professor-image {
+.user-profile .user-image {
   margin-top: 1.4rem;
   width: 240px;
   height: 240px;
   background-color: #2d7ea8;
 }
 
-.professor-profile .professor-image img {
+.user-profile .user-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -133,15 +133,15 @@ hr {
   background-size: cover;
 }
 
-.professor-profile .professor-info {
+.user-profile .user-info {
   width: 75%;
 }
 
-.professor-profile .social-links {
+.user-profile .social-links {
   margin-top: 20px;
 }
 
-.professor-profile .social-links a {
+.user-profile .social-links a {
   list-style: none;
   color: #222;
   font-size: 22px;
@@ -299,9 +299,9 @@ footer a:hover {
     width: 100%;
   }
 
-  /* Professor's Profile */
+  /* user's Profile */
 
-  .professor-profile .professor-info {
+  .user-profile .user-info {
     width: 65%;
   }
 
@@ -313,12 +313,12 @@ footer a:hover {
 }
 
 @media (max-width: 530px) {
-  /* Professor's Profile */
-  .professor-profile {
+  /* user's Profile */
+  .user-profile {
     flex-direction: column;
   }
 
-  .professor-profile .professor-info {
+  .user-profile .user-info {
     width: 100%;
   }
 
