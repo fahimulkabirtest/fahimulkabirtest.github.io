@@ -132,7 +132,7 @@ collections:
       - label: "Position"
         name: "position"
         widget: "select"
-        options: [faculty, postdoc, phd, ms, bachelors]
+        options: [Faculty, Postdoc, PhD, MS, Bachelors, Alumni]
 
       - { label: "Start Date", name: "startDate", widget: "string" }
       - {
