@@ -16,7 +16,7 @@ backend:
   base_url: https://fahimulkabirtestgithubio.vercel.app/
   auth_endpoint: api/auth
 
-site_url: https://fahimulkabir-academic-portfolio.vercel.app/
+site_url: https://fahimulkabirtest.github.io/
 
 media_folder: "public/uploads"
 public_folder: "uploads"
